@@ -66,10 +66,13 @@ void handle_client(tcp::socket socket) {
             }
             else if (command == "DELETE") {
                 std::string temp;
-                if (getline(ss, temp, '|')) {
+                if (getline(ss, temp, '|'))try {
                     int id = std::stoi(temp);
                     if (deleteNotice(id)) sendLine(socket, "OK");
                     else sendLine(socket, "ERROR|Notice not found");
+                }
+                catch (...) {
+                    sendLine(socket, "ERROR|Invalid ID");
                 }
             }
             else if (command == "SEARCH") {
