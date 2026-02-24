@@ -14,6 +14,7 @@
 				<Compiler>
 					<Add option="-g" />
 					<Add directory="C:/New folder/asio-1.36.0/include" />
+					<Add directory="C:/Computer projects/LANnoticeBoard/external" />
 				</Compiler>
 				<Linker>
 					<Add library="ws2_32" />
@@ -27,6 +28,7 @@
 				<Compiler>
 					<Add option="-O2" />
 					<Add directory="C:/New folder/asio-1.36.0/include" />
+					<Add directory="C:/Computer projects/LANnoticeBoard/external" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -38,13 +40,17 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 			<Add directory="C:/New folder/asio-1.36.0/include" />
+			<Add directory="C:/Computer projects/LANnoticeBoard/external" />
 		</Compiler>
 		<Linker>
 			<Add library="ws2_32" />
+			<Add library="mswsock" />
 		</Linker>
+		<Unit filename="Frontend/index.html" />
+		<Unit filename="Frontend/script.js" />
 		<Unit filename="notice_functions.cpp" />
 		<Unit filename="notice_functions.h" />
-		<Unit filename="server.cpp" />
+		<Unit filename="web_sevrer.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
