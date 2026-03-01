@@ -46,11 +46,9 @@
 			<Add library="ws2_32" />
 			<Add library="mswsock" />
 		</Linker>
-		<Unit filename="Frontend/index.html" />
-		<Unit filename="Frontend/script.js" />
 		<Unit filename="notice_functions.cpp" />
 		<Unit filename="notice_functions.h" />
-		<Unit filename="web_sevrer.cpp" />
+		<Unit filename="sevrer.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
