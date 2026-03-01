@@ -13,11 +13,11 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
-					<Add directory="C:/New folder/asio-1.36.0/include" />
-					<Add directory="C:/Computer projects/LANnoticeBoard/external" />
+					<Add directory="." />
 				</Compiler>
 				<Linker>
 					<Add library="ws2_32" />
+					<Add library="mswsock" />
 				</Linker>
 			</Target>
 			<Target title="Release">
@@ -27,20 +27,19 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
-					<Add directory="C:/New folder/asio-1.36.0/include" />
-					<Add directory="C:/Computer projects/LANnoticeBoard/external" />
+					<Add directory="." />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
 					<Add library="ws2_32" />
+					<Add library="mswsock" />
 				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
-			<Add directory="C:/New folder/asio-1.36.0/include" />
-			<Add directory="C:/Computer projects/LANnoticeBoard/external" />
+			<Add directory="." />
 		</Compiler>
 		<Linker>
 			<Add library="ws2_32" />
